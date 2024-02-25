@@ -113,10 +113,9 @@ class Staff(Person):
         return True
 
     def __str__(self):
-        return f"Staff ID: {self.staff_id}, Position: {self.position.name}, Shift Timing: {self.shift_timing.name}, " \
-               f"Assigned Location: {self.assigned_location.name}, Full Name: {self.get_full_name()}, " \
-               f"Email: {self.email_address}, Phone: {self.phone_number}"
-
+        return (f"Full Name: {self.get_full_name()}, Email: {self.email_address}, Phone: {self.phone_number}, "
+                f"Staff ID: {self.staff_id}, Position: {self.position.name}, "
+                f"Shift Timing: {self.shift_timing.name}, Assigned Location: {self.assigned_location.name}")
 
 # The Flight class represents a flight with its details (ex: flight number and arrival date) and methods (ex: update flight information) to manage.
 #The flight infromation is connected to the passenger. Meaning the infromation we get in the output are what the passenger booked for for example, flight number and the arrival date.

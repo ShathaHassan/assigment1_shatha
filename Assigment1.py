@@ -87,7 +87,6 @@ class Passenger(Person):
 class Staff(Person):
     def __init__(self, first_name="", last_name="", date_of_birth="", gender=None, email_address="", phone_number="",
                  staff_id="", position=None, shift_timing=None, assigned_location=None):
-        # Initialize the parent class (Person)
         super().__init__(first_name, last_name, date_of_birth, gender, email_address, phone_number)
 
         self.staff_id = staff_id

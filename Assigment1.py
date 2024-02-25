@@ -119,6 +119,7 @@ class Staff(Person):
 
 
 # The Flight class represents a flight with its details (ex: flight number and arrival date) and methods (ex: update flight information) to manage.
+#The flight infromation is connected to the passenger. Meaning the infromation we get in the output are what the passenger booked for for example, flight number and the arrival date.
 class Flight:
     def __init__(self, flight_number="", arrival_date="", arrival_time="", flight_status=None, total_seats=0, special_services=None):
         self.flight_number = flight_number
